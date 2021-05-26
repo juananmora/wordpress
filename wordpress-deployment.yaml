@@ -6,7 +6,9 @@ metadata:
     app: wordpress
 spec:
   ports:
-    - port: 80
+  - name: "http-word"
+    port: 8095
+    targetPort: 80
   selector:
     app: wordpress
     tier: frontend
